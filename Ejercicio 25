@@ -1,0 +1,28 @@
+import java.util.Scanner; // Sirve para escribir datos por teclado
+
+public class Ejercicio5 {
+    public static void main(String[] args) {
+        // Pedimos los kilos de manzanas del primer semestre
+        try (Scanner teclado = new Scanner(System.in)) {
+            // Pedimos los kilos de manzanas del primer semestre
+            System.out.print("Kilos de manzanas del primer semestre: ");
+            double m1 = teclado.nextDouble();
+            // Pedimos los kilos de manzanas del segundo semestre
+            System.out.print("Kilos de manzanas del segundo semestre: ");
+            double m2 = teclado.nextDouble();
+            // Pedimos los kilos de peras del primer semestre
+            System.out.print("Kilos de peras del primer semestre: ");
+            double p1 = teclado.nextDouble();
+            // Pedimos los kilos de peras del segundo semestre
+            System.out.print("Kilos de peras del segundo semestre: ");
+            double p2 = teclado.nextDouble();
+            // Calculamos el dinero de las dos frutas
+            double total = (m1 + m2) * 2.35 + (p1 + p2) * 1.95;
+            // Mostramos el importe total de las ventas
+            System.out.println("Importe total: " + total + " euros");
+            // Cerramos el teclado
+        }
+    }
+}
+
+
